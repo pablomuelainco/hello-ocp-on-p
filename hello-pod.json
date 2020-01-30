@@ -12,7 +12,7 @@
     "containers": [
       {
         "name": "hello-openshift-power",
-        "image": "openshift/hello-openshift-power",
+        "image": "docker.io/rpsene/hello-openshift-power",
         "ports": [
           {
             "containerPort": 8080,
