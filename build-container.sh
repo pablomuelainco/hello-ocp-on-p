@@ -2,7 +2,6 @@
 
 ARCH=$(uname -m)
 
-docker build -t container/$ARCH -f ./$ARCH/Dockerfile.$ARCH .
-docker tag container/$ARCH quay.io/rpsene/hello-ocp:$ARCH
+docker build -t quay.io/rpsene/hello-ocp:$ARCH-f ./Dockerfile.$ARCH .
 #docker login quay.io -u "$ROBOT_USER" -p $ROBOT_TOKEN
 #docker push quay.io/rpsene/hello-ocp:$ARCH
