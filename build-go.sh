@@ -1,4 +1,4 @@
 #!/bin/bash
 
 go build -tags netgo
-mv hello-openshift bin
+mv hello-openshift ./bin
