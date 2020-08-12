@@ -14,6 +14,6 @@ jobs:
    - stage: building ppc64le image
      arch: ppc64le
      script: chmod +x ./build-go.sh; ./build-go.sh; chmod +x ./build-container.sh; ./build-container.sh
-   #- stage: building multi-arch image
-   #  arch: ppc64le
-   #  script: chmod +x ./create-multi-arch.sh; ./create-multi-arch.sh
+   - stage: building multi-arch image
+     arch: ppc64le
+     script: chmod +x ./create-multi-arch.sh; ./create-multi-arch.sh
