@@ -2,7 +2,7 @@ FROM golang:latest
 
 MAINTAINER Rafael Sene <rpsene@gmail.com>
 
-COPY bin/hello-openshift-x86_64 /hello-openshift-x86_64
+COPY bin/hello-openshift /hello-openshift-x86_64
 
 EXPOSE 8080 8888
 
