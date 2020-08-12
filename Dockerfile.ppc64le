@@ -2,7 +2,7 @@ FROM ppc64le/golang:latest
 
 MAINTAINER Rafael Sene <rpsene@gmail.com>
 
-COPY bin/hello-openshift-power /hello-openshift-power
+COPY bin/hello-openshift /hello-openshift-power
 
 EXPOSE 8080 8888
 
