@@ -13,4 +13,4 @@ jobs:
      script: chmod +x ./build-go.sh; ./build-go.sh
    - stage: building ppc64le image
      arch: ppc64le
-     script: chmod +x ./build-go.sh; ./build-go.sh
+     script: chmod +x ./build-go.sh; ./build-go.sh; chmod +x ./build-container.sh; build-container.sh
