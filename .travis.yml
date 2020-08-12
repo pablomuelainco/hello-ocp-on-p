@@ -1,0 +1,16 @@
+language: bash
+
+os: linux
+
+services: docker
+
+dist: bionic
+
+jobs:
+  include:
+   - stage: building x86_64 image
+     arch: amd64
+     script: chmod +x ./build-go.sh; ./build-go.sh
+   - stage: building ppc64le image
+     arch: ppc64le
+     script: chmod +x ./build-go.sh; ./build-go.sh
