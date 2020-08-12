@@ -1,5 +1,5 @@
 #!/bin/bash
 
-go build -tags netgo
+go build -tags netgo -o hello-openshift
 ls -la
-#mv hello-openshift ./bin
+mv hello-openshift ./bin
