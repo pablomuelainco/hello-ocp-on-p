@@ -12,7 +12,7 @@
     "containers": [
       {
         "name": "hello-openshift-power",
-        "image": "docker.io/rpsene/hello-openshift-power",
+        "image": "quay.io/rpsene/hello-ocp",
         "ports": [
           {
             "containerPort": 8080,
