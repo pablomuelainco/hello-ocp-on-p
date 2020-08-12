@@ -1,0 +1,11 @@
+FROM golang:latest
+
+MAINTAINER Rafael Sene <rpsene@gmail.com>
+
+COPY bin/hello-openshift-x86_64 /hello-openshift-x86_64
+
+EXPOSE 8080 8888
+
+USER 1001
+
+ENTRYPOINT ["/hello-openshift-x86_64"]
